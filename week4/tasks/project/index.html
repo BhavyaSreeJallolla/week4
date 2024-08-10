@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Manager</h1>
+        <img src="https://img.freepik.com/premium-photo/green-phone-with-green-phone-it-ai-generator_1279039-692.jpg?size=626&ext=jpg&ga=GA1.1.1803882428.1717770665&semt=ais_hybrid"" alt="Logo" class="logo"> <!-- Ensure you have an image named 'logo.png' -->
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="text" id="phone" placeholder="Phone" required>
+            <button type="submit">Add Contact</button>
+        </form>
+        <input type="text" id="search" placeholder="Search by name or phone" oninput="searchContacts()">
+        <select id="sort" onchange="sortContacts()">
+            <option value="name">Sort by Name</option>
+            <option value="dateAdded">Sort by Date Added</option>
+        </select>
+        <ul id="contactList"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

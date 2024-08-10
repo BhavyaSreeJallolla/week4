@@ -1,0 +1,168 @@
+body {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color:darkorange;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    background:lemonchiffon;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.container:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 150px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+    font-weight: 600;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+form input,
+form button {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+form input {
+    flex: 1;
+}
+
+form input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+form button {
+    background: #007bff;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    font-weight: 500;
+}
+
+form button:hover {
+    background: #0056b3;
+}
+
+#search,
+#sort {
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+#search:focus,
+#sort:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    background: #f9f9f9;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+li:hover {
+    background-color: #f0f0f0;
+}
+
+.contact-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+li span {
+    font-weight: 500;
+    color: #333;
+    flex: 1;
+}
+
+li button {
+    background: #dc3545;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+li button:hover {
+    background: #c82333;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+li button:hover .icon {
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+    
+    form {
+        flex-direction: column;
+    }
+    
+    form input,
+    form button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
